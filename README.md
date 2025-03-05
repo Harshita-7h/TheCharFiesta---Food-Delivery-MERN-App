@@ -3,9 +3,11 @@ The food items added to the cart are visible when the "My Cart" button is clicke
 Both the food items and their respective categories, as well as the signed-up users’ data, are securely stored in MongoDB Atlas.
 
 Setting Up and Running the Application
+
 Backend Setup:
 1.	Open your terminal and navigate to the 'backend' folder.
 2.	Run the following command to start the server: ‘nodemon .\index.js’.
+   
 Frontend Setup:
 1.	Open a new terminal window, navigate to the 'frontend' folder, and run: ‘npm start’.
 
