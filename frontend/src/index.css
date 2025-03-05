@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'NHaasGroteskDSPro-65Md' !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-icon-size {
+  text-decoration-color: antiquewhite;
+}
+
+#carousel {
+  max-height: 750px;
+}
+
+.section {
+  padding-left: 150px;
+}
+
+.section input[type="radio"],
+.section input[type="checkbox"] {
+  display: none;
+}
+
+.radio-container {
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 85px;
+}
+
+.radio-container label {
+  position: relative;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  /* Optional, for spacing between the radio button and label */
+}
+
+.radio-container span::before,
+.radio-container span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.radio-container span.radio:hover {
+  cursor: pointer;
+}
+
+.radio-container span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: #A8AAC1;
+  border-radius: 50px;
+
+}
+
+.radio-container span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: #6C788A;
+  transition: left .25s, background-color .25s;
+
+}
+
+input[type="radio"]:checked+label span.radio::after {
+  left: -27px;
+  background-color: #31f468;
+
+}
+
+.radio-container span.checkbox::before {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  left: -35px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  transition: .2s;
+
+}
+
+.radio-container span.checkbox:hover::before {
+  border: 3px solid #F0FF76;
+
+
+}
+
+.radio-container span.checkbox::after {
+  display: inline-block;
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  left: -31px;
+  top: 2px;
+  color: transparent;
+  transition: color .2s;
+}
+
+
+.login-modal-div .modal-content {
+  /*background-color: #eff1f3;*/
+  margin: auto;
+  padding-top: 20px;
+  border: 1px solid #888;
+  width: 450px;
+  height: 550px;
+  border-radius: 5px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 100vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: auto;
+  -webkit-transition: opacity 300ms ease 200ms, -webkit-transform 300ms ease 200ms, -webkit-filter 300ms ease 200ms;
+  transition: opacity 300ms ease 200ms, -webkit-transform 300ms ease 200ms, -webkit-filter 300ms ease 200ms;
+  transition: transform 300ms ease 200ms, filter 300ms ease 200ms, opacity 300ms ease 200ms;
+  transition: transform 300ms ease 200ms, filter 300ms ease 200ms, opacity 300ms ease 200ms, -webkit-transform 300ms ease 200ms, -webkit-filter 300ms ease 200ms;
+
+}
+
+.modal-wrapper.modal--active {
+  top: 300px;
+  margin-top: -150px;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  padding: 80px 20px 20px;
+  overflow: hidden;
+  height: 300px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+.blur {
+  margin: 0;
+  box-shadow: 0px 0px 20px 20px rgba(255,255,255,1);
+  text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+  transform: scale(0.9);
+  opacity: 0.6;
+}

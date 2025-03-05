@@ -1,0 +1,35 @@
+[
+    {
+        "CategoryName": "Main Course"
+    },
+    {
+        "CategoryName": "Starter"
+    },
+    {
+        "CategoryName": "Pizza"
+    },
+    {
+        "CategoryName": "Japanese"
+    },
+    {
+        "CategoryName": "Desserts"
+    },
+    {
+        "CategoryName": "Shawarma"
+    },
+    {
+        "CategoryName": "Sundae"
+    },
+    {
+        "CategoryName": "Salad"
+    },
+    {
+        "CategoryName": "Gourmet"
+    },
+    {
+        "CategoryName": "Combo/Platter"
+    },
+    {
+        "CategoryName": "Tacos"
+    }
+]
